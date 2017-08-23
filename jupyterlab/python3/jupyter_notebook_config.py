@@ -199,7 +199,7 @@ c.NotebookApp.ip = '*'
 #c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-c.NotebookApp.notebook_dir = '/home/devuser'
+c.NotebookApp.notebook_dir = '/home/devuser/data'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
@@ -284,7 +284,7 @@ c.NotebookApp.password_required = True
 #------------------------------------------------------------------------------
 
 ## The app directory to launch JupyterLab from.
-c.LabApp.app_dir = '/home/devuser'
+c.LabApp.app_dir = '/home/devuser/data'
 
 ## Whether to start the app in core mode. In this mode, JupyterLab will run using
 #  the JavaScript assets that are within the installed JupyterLab Python package.

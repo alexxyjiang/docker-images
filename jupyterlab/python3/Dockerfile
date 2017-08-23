@@ -14,5 +14,6 @@ RUN pip3 install --user --upgrade pip
 RUN pip3 install --user --upgrade setuptools
 RUN pip3 install --user --upgrade jupyterlab
 COPY ./jupyter_notebook_config.py /home/devuser/.jupyter/jupyter_notebook_config.py
+RUN mkdir -p /home/devuser/data
 
-ENTRYPOINT ["/home/devuser/.local/bin/jupyter", "lab", "--no-browser", "--ip=\"*\""]
+ENTRYPOINT ["/home/devuser/.local/bin/jupyter", "lab", "--no-browser"]
