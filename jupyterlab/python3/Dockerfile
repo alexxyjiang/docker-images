@@ -10,8 +10,8 @@ RUN apt install -y python3 python3-dev python3-pip python3-tk
 # jupyterlab with python3
 RUN useradd -m -g users -s /bin/bash devuser
 USER devuser
+RUN pip3 install --user --upgrade six setuptools
 RUN pip3 install --user --upgrade pip
-RUN pip3 install --user --upgrade setuptools
 RUN pip3 install --user --upgrade jupyterlab
 COPY ./jupyter_notebook_config.py /home/devuser/.jupyter/jupyter_notebook_config.py
 RUN mkdir -p /home/devuser/data
